@@ -56,6 +56,12 @@ body{
 header{
     width: 100%;
     height: 600px;
+    background: #1c4c96;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, hsla(231, 36%, 45%, 0.432), hsla(0, 72%, 50%, 0.466)), url(../img/banner.jpg);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsla(231, 36%, 45%, 0.541), hsla(0, 72%, 50%, 0.555)), url(../img/banner.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
 }
 
 .encabezado{
@@ -174,6 +180,12 @@ header .textos-header{
     color: #fff;
 }
 
+.wave{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
 /* About us */
 
 main .sobre-nosotros{
@@ -253,7 +265,7 @@ div.not{
 /* footer */
 
 footer{
-    background: #414141;
+    background: #1c4c96;
     padding: 60px 0 30px 0;
     margin: auto;
     overflow: hidden;
