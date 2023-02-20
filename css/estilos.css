@@ -1,5 +1,15 @@
 /* -------------PÁGINA PRINCIPAL------------------------*/
+/* 
+PALETA DE COLORES:
 
+#1C4C96 - Fondos
+#256EdC - Titulos
+#427ed7 - Titulos2
+#5f95e7 - Titulos3
+#97bdf5 - Extra
+
+
+*/
 *{
     margin: 0;
     padding: 0;
@@ -20,14 +30,14 @@ body{
 }
 
 .titulo{
-    color: #642a73;
+    color: #256EdC;
     font-size: 30px;
     text-align: center;
     margin-bottom: 60px;
 }
 
 .titulo2{
-    color: #642a73;
+    color: #427ed7;
     font-size: 25px;
     text-align: left;
     margin-left: 15%;
@@ -161,7 +171,7 @@ header .textos-header{
 
 .textos-header h1{
     font-size: 50px;
-    color: rgb(177, 177, 177);
+    color: rgb(38, 110, 220);
 }
 
 .textos-header h2{
