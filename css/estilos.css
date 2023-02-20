@@ -184,7 +184,7 @@ main .sobre-nosotros{
 }
 
 .contenedor-sobre-nosotros{
-    display: flex;
+    margin-left: 10%;
     justify-content: space-evenly;
 }
 
@@ -194,7 +194,7 @@ main .sobre-nosotros{
 }
 
 .sobre-nosotros .contenido-textos{
-    width: 48%;
+    width: 55%;
 }
 
 .contenido-textos h3{
