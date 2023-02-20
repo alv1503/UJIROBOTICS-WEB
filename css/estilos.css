@@ -2,6 +2,7 @@
 /* 
 PALETA DE COLORES:
 
+rgb(25, 60, 93) - Color logo
 #1C4C96 - Fondos
 #256EdC - Titulos
 #427ed7 - Titulos2
@@ -31,7 +32,7 @@ body{
 }
 
 .titulo{
-    color: #256EdC;
+    color: #1C4C96;
     font-size: 30px;
     text-align: center;
     margin-bottom: 60px;
@@ -60,7 +61,7 @@ header{
 }
 
 .encabezado{
-    background-color: rgb(28, 76, 150);
+    background-color: #193c5d;
     width: auto;
     height: 65px;
 }
@@ -254,7 +255,7 @@ div.not{
 /* footer */
 
 footer{
-    background: #1c4c96;
+    background: rgb(25, 60, 93);
     padding: 60px 0 30px 0;
     margin: auto;
     overflow: hidden;
