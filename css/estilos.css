@@ -4,6 +4,7 @@ PALETA DE COLORES:
 
 rgb(25, 60, 93) - Fondos (color logo)
 #1C4C96 - Titulos
+
 #256EdC - Titulos2
 #427ed7 - Titulos3
 #5f95e7 - Titulos4
@@ -39,7 +40,7 @@ body{
 }
 
 .titulo2{
-    color: #427ed7;
+    color: #1C4C96;
     font-size: 25px;
     text-align: left;
     margin-left: 15%;
