@@ -14,7 +14,7 @@ rgb(25, 60, 93) - Fondos (color logo)
 */
 *{
     margin: 0px;
-    padding: 0;
+    padding: 0px;
     box-sizing: border-box;
 }
 
@@ -64,6 +64,18 @@ header{
     background-color: #193c5d;
     width: auto;
     height: 65px;
+}
+
+.imagen-header{
+    width: 40px;
+    height: 40px;
+    background-image: url(../img/header.jpg);
+    background-size: cover;
+    background-position: center;
+    background-color: #dfdbdb;
+    position: absolute;
+    top: 10px;
+    left: 10px;
 }
 
 /* CONTACTO */
@@ -397,7 +409,7 @@ div.contenido-cuadro{
 
 .noticias p{
     margin-left: 400px;
-    margin-right: 100px;
+    margin-right: 400px;
     text-align: justify;
 }
 
