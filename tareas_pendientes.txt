@@ -1,0 +1,8 @@
+- Eliminada pagina eventos de las demás paginas
+- Eliminada pagina de patrocinadores de todas las paginas
+
+
+
+
+PENDIENTE:
+- Quieres colaborar con nosotros? en el footer del menu
