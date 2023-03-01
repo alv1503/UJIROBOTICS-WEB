@@ -2,7 +2,6 @@
 - Eliminada pagina de patrocinadores de todas las paginas
 
 
-
-
 PENDIENTE:
-- Quieres colaborar con nosotros? en el footer del menu
+- Falta"Contactanos" en el footer del menu
+- cabecera foto + "ceabot" y "asti"
