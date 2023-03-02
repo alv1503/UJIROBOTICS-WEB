@@ -5,3 +5,5 @@
 PENDIENTE:
 - Falta"Contactanos" en el footer del menu
 - cabecera foto + "ceabot" y "asti"
+- desde ceabot y asti no se despliega el menu de equipo
+- mejorar texto del apartado de memoria de los equipos
