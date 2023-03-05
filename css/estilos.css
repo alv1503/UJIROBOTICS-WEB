@@ -141,6 +141,7 @@ nav {
 .menu-horizontal > li:hover {
     background-color: rgb(24, 41, 62);
     border-radius: 10px;
+    
 }
 
 .menu-vertical {
@@ -157,6 +158,7 @@ nav {
 
 .menu-vertical > li:hover {
     background-color: rgb(24, 41, 62);
+    
 }
 
 .menu-vertical li a {
@@ -482,7 +484,6 @@ div.contenido-cuadro {
 .miembros img {
     width: 275px;
     height: 300px;
-    border-radius: 5px;
 }
 
 .miembros p {
