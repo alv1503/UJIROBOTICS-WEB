@@ -61,11 +61,17 @@ header {
     height: 600px;
 }
 
+.small_header {
+    width: 100%;
+    height: 100px;
+}
+
 .encabezado {
     background-color: #193c5d;
     width: auto;
     height: 65px;
 }
+
 
 
 /* CONTACTO */
