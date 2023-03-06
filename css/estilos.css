@@ -488,6 +488,27 @@ div.contenido-cuadro {
     line-height: 15px;
 }
 
+/*---GALERÍA DE IMÁGENES---*/
+
+.gallery{
+    float: left;
+}
+
+.gallery img{
+    width: 200px;
+    height: 200px;
+    padding: 5px;
+    filter: grayscale(100%);
+    transition: 1s;
+    float: left;
+}
+
+.gallery img:hover{
+    filter: grayscale(0);
+    transform: scale(1.05);
+}
+
+
 /* -----------------------MIEMBROS-------------------*/
 
 .miembros {
