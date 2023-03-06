@@ -2,6 +2,8 @@
 /* 
 PALETA DE COLORES:
 
+#e0dbdb - Fondo blanco
+
 rgb(25, 60, 93) - Fondos (color logo)
 #1C4C96 - Titulos
 
@@ -73,7 +75,6 @@ header {
 }
 
 
-
 /* CONTACTO */
 
 .contacto {
@@ -137,7 +138,7 @@ nav {
 .menu-horizontal > li:hover {
     background-color: rgb(24, 41, 62);
     border-radius: 10px;
-    
+
 }
 
 .menu-vertical {
@@ -154,7 +155,7 @@ nav {
 
 .menu-vertical > li:hover {
     background-color: rgb(24, 41, 62);
-    
+
 }
 
 .menu-vertical li a {
@@ -190,7 +191,7 @@ header .textos-header {
 /*-Color oscuro pestaña actual-*/
 
 .seleccionado {
-    background-color:rgb(24, 41, 62);
+    background-color: rgb(24, 41, 62);
     color: #fff;
     border-radius: 10px;
 }
@@ -265,9 +266,6 @@ header .textos-header {
     width: 100%;
     height: 100%;
 }
-
-
-
 
 /* About us */
 
@@ -482,10 +480,9 @@ div.contenido-cuadro {
 }
 
 
-
 /* PAGINA NUEVA NOTICIA INDIVIDUAL */
 
-.contenido-textos-noticias p{
+.contenido-textos-noticias p {
     padding: 0px 0px 30px 15px;
     font-weight: 300;
     text-align: justify;
@@ -557,11 +554,11 @@ div.contenido-cuadro {
 
 /*---GALERÍA DE IMÁGENES---*/
 
-.gallery{
+.gallery {
     float: left;
 }
 
-.gallery img{
+.gallery img {
     width: 200px;
     height: 200px;
     padding: 5px;
@@ -570,14 +567,10 @@ div.contenido-cuadro {
     float: left;
 }
 
-.gallery img:hover{
+.gallery img:hover {
     filter: grayscale(0);
     transform: scale(1.05);
 }
-
-
-*/
-
 
 
 /* -----------------------MIEMBROS-------------------*/
@@ -745,4 +738,21 @@ div.foto-miembro {
     border: 2px solid rgb(25, 60, 93);
     border-radius: 10px;
 
+}
+
+
+/*-----------------------BUTTONS--------------------------*/
+
+.noticias_button {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    background-color: rgb(25, 60, 93);
+    color: white;
+    padding: 7px 15px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
 }
