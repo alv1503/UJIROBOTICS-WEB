@@ -431,7 +431,23 @@ div.contenido-cuadro {
     margin-top: -35px;
 }
 
+
+
+/* PAGINA NUEVA NOTICIA INDIVIDUAL */
+
+.contenido-textos-noticias p{
+    padding: 0px 0px 30px 15px;
+    font-weight: 300;
+    text-align: justify;
+    margin-right: 20%;
+    margin-left: 20%;
+}
+
 /* NOTICIA FLOTANTE*/
+
+/* .noticias {
+    display: none;
+}
 
 .noticias {
     display: none;
@@ -488,6 +504,7 @@ div.contenido-cuadro {
     line-height: 15px;
 }
 
+
 /*---GALERÍA DE IMÁGENES---*/
 
 .gallery{
@@ -507,6 +524,10 @@ div.contenido-cuadro {
     filter: grayscale(0);
     transform: scale(1.05);
 }
+
+
+*/
+
 
 
 /* -----------------------MIEMBROS-------------------*/
