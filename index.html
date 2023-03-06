@@ -7,6 +7,7 @@
     <title>UJI ROB TEAM WEB</title>
     <link rel="shortcut icon" href="" type="image/x-icon">
     <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700;800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a01e6aecff.js" crossorigin="anonymous"></script>
@@ -28,9 +29,44 @@
                 <li class="seleccionado"><a href="index.html">INICIO</a></li>
                 <li><a href="noticias.html">NOTICIAS</a></li>
                 <li><a href="equipo.html">EQUIPO</a>
+                    <ul class="menu-vertical">
+                        <li><a href="ceabot-teampage.html">CEABOT</a></li>
+                        <li><a href="asti-teampage.html">ASTI</a></li>
+                    </ul>
                 </li>
             </ul>
         </nav>
+        <div class="container">
+            <!-- Slider main container -->
+            <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              
+              <div class="swiper-slide"><img src="img/prueba_imagen2.jpeg">
+                <div class="texto-noticia">
+                  <h1>Noticia 1</h1>
+                </div></div>
+              <div class="swiper-slide"><img src="img/robot_prueba_imagen.jpg">
+                <div class="texto-noticia">
+                  <h1>Noticia 2</h1>
+                </div></div>
+              <div class="swiper-slide"><img src="img/UJI ROBOTICS Logo transparente.png">
+                <div class="texto-noticia">
+                  <h1>Noticia 3</h1>
+                </div></div>
+        
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+          
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          
+          </div>
+        </div>
+
     </div>
 </header>
 
@@ -104,5 +140,29 @@
     </div>
     <h2 class="titulo-final">&copy; Alvaro Arbona</h2>
 </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+<script>
+  const swiper = new Swiper('.swiper', {
+    autoplay:{
+        delay: 6000,
+        disableOnInteraction: false,
+    },
+  loop: true,
+  effect: "fade",
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+
+});
+</script>
 </body>
 </html>
