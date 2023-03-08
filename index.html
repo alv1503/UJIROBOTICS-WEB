@@ -39,32 +39,35 @@
         <div class="container">
             <!-- Slider main container -->
             <div class="swiper">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-              <!-- Slides -->
-              
-              <div class="swiper-slide"><img src="img/prueba_imagen2.jpeg">
-                <div class="texto-noticia">
-                  <h1>Noticia 1</h1>
-                </div></div>
-              <div class="swiper-slide"><img src="img/robot_prueba_imagen.jpg">
-                <div class="texto-noticia">
-                  <h1>Noticia 2</h1>
-                </div></div>
-              <div class="swiper-slide"><img src="img/UJI ROBOTICS Logo transparente.png">
-                <div class="texto-noticia">
-                  <h1>Noticia 3</h1>
-                </div></div>
-        
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+
+                    <div class="swiper-slide"><img src="img/prueba_imagen2.jpeg">
+                        <div class="texto-noticia">
+                            <h1>Noticia 1</h1>
+                        </div>
+                    </div>
+                    <div class="swiper-slide"><img src="img/robot_prueba_imagen.jpg">
+                        <div class="texto-noticia">
+                            <h1>Noticia 2</h1>
+                        </div>
+                    </div>
+                    <div class="swiper-slide"><img src="img/UJI ROBOTICS Logo transparente.png">
+                        <div class="texto-noticia">
+                            <h1>Noticia 3</h1>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
             </div>
-            <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
-          
-            <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-          
-          </div>
         </div>
 
     </div>
@@ -105,6 +108,33 @@
             </div>
         </div>
     </section>
+    <section>
+        <button onclick="topFunction()" class="volverarriba_button">Volver arriba</button>
+        <script>
+            //Get the button
+            var mybutton = document.getElementsByClassName("volverarriba_button")[0];
+
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function () {
+                scrollFunction()
+            };
+
+            function scrollFunction() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    mybutton.style.display = "block";
+                } else {
+                    mybutton.style.display = "none";
+                }
+            }
+
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+                window.scrollTo({top: 0, behavior: 'smooth'}) // For modern browsers
+                //document.body.scrollTop = 0; // For Safari
+                //document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+            }
+        </script>
+    </section>
 </main>
 
 <footer>
@@ -128,25 +158,25 @@
 <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
 <script>
-  const swiper = new Swiper('.swiper', {
-    autoplay:{
-        delay: 6000,
-        disableOnInteraction: false,
-    },
-  loop: true,
-  effect: "fade",
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-  },
+    const swiper = new Swiper('.swiper', {
+        autoplay: {
+            delay: 6000,
+            disableOnInteraction: false,
+        },
+        loop: true,
+        effect: "fade",
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
 
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
 
 
-});
+    });
 </script>
 </body>
 </html>
