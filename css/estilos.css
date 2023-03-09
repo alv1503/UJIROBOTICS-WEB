@@ -654,6 +654,7 @@ div.foto-miembro {
 }
 
 .volverarriba_button {
+    display: none;
     position: fixed;
     bottom: 10px;
     right: 10px;
@@ -665,6 +666,7 @@ div.foto-miembro {
     margin: 4px 2px;
     cursor: pointer;
     border-radius: 12px;
+
 }
 
 .volverarriba_button:hover {
