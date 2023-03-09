@@ -77,8 +77,10 @@ header {
 
 .encabezado {
     background-color: #193c5d;
-    width: auto;
+    width: 100%;
     height: 65px;
+    z-index: 100;
+    position: fixed;
 }
 
 
@@ -130,7 +132,7 @@ nav {
 
 .menu-horizontal > li > a {
     display: block;
-    padding: 8px 15px;
+    padding: 2px 15px;
     color: white;
     text-decoration: none;
 }
@@ -153,8 +155,9 @@ nav {
     display: none;
     list-style: none;
     width: 300px;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.7);
     z-index: 99;
+    border-radius: 10px;
 }
 
 .menu-horizontal li:hover .menu-vertical {
@@ -162,7 +165,8 @@ nav {
 }
 
 .menu-vertical > li:hover {
-    background-color: rgb(24, 41, 62);
+    background-color: rgb(24, 41, 62, 0.8);
+    border-radius: 10px;
 
 }
 
@@ -206,6 +210,7 @@ header .textos-header {
 
 
 /*-----------------------IMAGEN CON TEXTO SUPERPUESTO--------------------------*/
+
 .header-image {
     position: relative;
     text-align: center;
@@ -214,6 +219,7 @@ header .textos-header {
     background-position: center;
     height: 500px;
     width: 100%;
+    top: 65px;
 }
 
 .header-text {
@@ -232,7 +238,7 @@ header .textos-header {
 
 /* Noticias principales*/
 
-.container{
+.container {
     background: #dfdbdb;
     display: flex;
     align-items: center;
@@ -242,27 +248,32 @@ header .textos-header {
     background-size: cover;
     height: 500px;
     width: 100%;
+    top: 80px;
 }
-.swiper{
+
+.swiper {
     width: 80%;
     height: 95%;
     box-shadow: 0 4px 8px 0 rgb(25, 60, 93), 0 6px 20px 0 rgb(0 0 0);
     border-radius: 10px;
 }
-.swiper img{
+
+.swiper img {
     width: 100%;
 }
-.swiper-slide img{
+
+.swiper-slide img {
     position: relative;
     text-align: center;
     width: 100%;
     height: 500px;
 }
 
-.swiper .swiper-button-prev, .swiper .swiper-button-next{
+.swiper .swiper-button-prev, .swiper .swiper-button-next {
     color: #fff;
 }
-.swiper .swiper-pagination-bullet-active{
+
+.swiper .swiper-pagination-bullet-active {
     background: #fff;
 }
 
@@ -395,6 +406,10 @@ footer {
 
 }
 
+.cuadro-noticia a {
+    text-decoration: none;
+}
+
 
 .cuadro-noticia p {
     color: #000;
@@ -419,6 +434,8 @@ div.contenido-cuadro {
     margin-left: 200px;
     position: relative;
     text-align: justify;
+    text-decoration: underline;
+    -webkit-align-content: center
 }
 
 .titular-secundario {
@@ -660,7 +677,7 @@ div.foto-miembro {
     right: 10px;
     background-color: rgb(25, 60, 93);
     color: white;
-    padding: 7px 15px;
+    padding: 8px 12px;
     text-align: center;
     font-size: 16px;
     margin: 4px 2px;
