@@ -296,7 +296,7 @@ header .textos-header {
 /* About us */
 
 main .sobre-nosotros {
-    padding: 0px 30px 60px 0px;
+    padding: 50px 30px 60px 0px;
 }
 
 .contenedor-sobre-nosotros {
@@ -690,3 +690,81 @@ div.foto-miembro {
     background-color: rgb(18, 43, 67);
     color: white;
 }
+
+/*----------------------TEST SPONSORS-------------------------*/
+
+/* variables para la parte de los sponsors: */
+:root {                       
+    --numero-de-sponsors: 6;   /* IMPORTANTE PONER EL NUMERO CORRECTO DE SPONSORS */
+    --ancho-de-slider: calc(200px * var(--numero-de-sponsors));
+    --alto-de-slider: 200px;
+    --velocidad-de-scroll: 30s;
+  }
+
+
+.slider-sponsors {
+    display: flex;
+    height: auto;
+    margin: auto;
+    overflow: hidden;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.slider-sponsors::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    width: 100px;
+    height: var(--alto-de-slider);
+    background: linear-gradient(
+        -90deg, 
+        hsla(0, 0%, 96.9%, 0), 
+        #e0dbdb);
+    z-index: 1;
+}
+
+.slider-sponsors::after {
+    position: absolute;
+    content: "";
+    right: 0;
+    width: 100px;
+    height: var(--alto-de-slider);
+    background: linear-gradient(
+        90deg,
+        hsla(0, 0%, 96.9%, 0),
+        #e0dbdb
+    );
+}
+
+.slider-sponsors .slide-track {
+    display: flex;
+    animation: scroll var(--velocidad-de-scroll) linear infinite;
+    -webkit-animation: scroll var(--velocidad-de-scroll) linear infinite;
+    width: calc( 2 * var(--ancho-de-slider));
+}
+
+.slider-sponsors .slide img {
+    width: 300px;
+    height: var(--alto-de-slider);
+    padding: 5px;
+    background-color: #e0dbdb;
+    cursor: pointer;
+    margin: 16px;
+    border-radius: 13px;
+    box-shadow: rgba(50,50,93,0.25) 0px 2px 5px -1px,
+                rgba(0,0,0,0.3) 0px 1px 3px -1px;
+}
+
+@keyframes scroll {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+    100% {
+        -webkit-transform: translateX(calc(-333px * var(--numero-de-sponsors)));
+        transform: translateX(calc(-333px * var(--numero-de-sponsors)));
+    }
+}
+
+
